@@ -1,11 +1,11 @@
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/parayo?useUnicode=true&CharacterEncoding=utf8&autoReconnect=true&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/parayo?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=UTC
     username: parayo
     password: parayopassword
     data-username: parayo
     data-password: parayopassword
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
