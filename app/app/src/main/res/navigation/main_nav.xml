@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_nav"
-    app:startDestination="@id/introFragment">
+    app:startDestination="@id/signupFragment">
 
     <fragment
         android:id="@+id/introFragment"
         android:name="com.yellowlego.parayo.intro.IntroFragment"
         android:label="IntroFragment" />
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.yellowlego.parayo.signup.SignupFragment"
+        android:label="SignupFragment" />
 </navigation>
