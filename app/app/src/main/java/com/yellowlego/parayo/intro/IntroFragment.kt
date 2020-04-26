@@ -25,14 +25,7 @@ class IntroFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        runBlocking {
-            try {
-                val response = ParayoApi.instance.hello()
-                Log.d("IntroFragment", response.data)
-            } catch (e: Exception) {
-                Log.e("IntroFragment", "Hello API 호출 오류", e)
-            }
-        }
+
         return inflater.inflate(R.layout.intro_fragment, container, false)
     }
 
